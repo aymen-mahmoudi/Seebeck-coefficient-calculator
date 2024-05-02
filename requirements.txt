@@ -1,0 +1,6 @@
+pyqt5==5.15.2
+pyqt5-tools
+numpy
+scipy
+matplotlib
+pandas
