@@ -12,7 +12,7 @@ $$ \frac{8\pi^{2}k_{B}^{2}}{3eh^{2}}mT\left[ \frac{\pi}{3n} \right]^{\frac{3}{2}
 ## Usage
 You just have to insert the density, the temperature and the effective mass values and press on the calculate buton.
 
-<img src="./resources/gui_screenshot.jpg"
+<img src="./gui_screenshot.jpg"
      alt="gui" width="300" height="450"
       style="float: center"/>
 
