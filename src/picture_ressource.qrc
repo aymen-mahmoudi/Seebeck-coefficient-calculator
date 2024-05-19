@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>equation.gif</file>
+    <file>logo.jpg</file>
+  </qresource>
+</RCC>
+
+

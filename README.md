@@ -1,24 +1,26 @@
-# Seebeck coefficient calculator
+# Effective mass fitting
 
 
 ## Description
-This project allows to calculate the Seebeck coefficient via the formula below using the density, the temperature and the effective mass.
-<br>
-<br>
-$$ \frac{8\pi^{2}k_{B}^{2}}{3eh^{2}}mT\left[ \frac{\pi}{3n} \right]^{\frac{3}{2}} $$
-
-
+This project allows to estimate the effeective mass of a an elecronic band by fitting this latter with a parabolic shape.
+<br>  
+For the bands near to the Fermi level the disperion relation can be considered as :
+$$ \frac{1}{2m^{*}} = \frac{1}{\hbar^{2}} \frac{\mathrm{d} E }{\mathrm{d} k^{2}}  $$
+<span style="white-space: pre-line"></span>
+$$E(k) \propto c\times k^{2} $$</span>
+Knowing the concavity of the parabola, the effective mass can be calculated via : </span>
+$$ m^{*} = \frac{\hbar^{2}}{2c} $$
 
 ## Usage
-You just have to insert the density, the temperature and the effective mass values and press on the calculate buton.
+You need to provide an image with the ARPES 2D scan to be opened via the browsing buton. Then, you can fit the parabola with the wanted band. The effective mass value is updating via the update buton.
 
-<img src="./gui_screenshot.jpg"
-     alt="gui" width="300" height="450"
+<img src="./resources/gui_screenshot.jpg"
+     alt="gui" width="600" height="450"
       style="float: center"/>
 
 
 ## Installation
-To use the app, you can download and directly execute the file Seebeck.exe (just for Windows X64). Otherwise, you can run the main.py script which is available within the necessary resources. I recommend to setup a python 3.8 virtual environment and adding the required libraries using the following command after cloning the rep (you can just download the rep in case you don't use git):
+To use the app, you can download and directly execute the file mass.exe (just for Windows X64). Otherwise, you can run the main.py script which is available within the necessary resources. I recommend to setup a python 3.8 virtual environment and adding the required libraries using the following command after cloning the rep (you can just download the rep in case you don't use git):
 ```console
 pip install -r requirements.txt
 ```
@@ -36,3 +38,7 @@ In case of a problem, It is strongly recommended to post an issue. For a more co
 
 ## Acknowledgment
 I thank Geoffroy Kremer for testing and verifying the formula.  
+
+
+
+
